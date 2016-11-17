@@ -51,12 +51,3 @@ $(document).ready(function () {
         });
     });
 });
-
-
-$(document).ready(function () {
-    var isChrome = !!window.chrome;
-    var isIE = /*@cc_on!@*/false;
-    if (isChrome) {
-        $("#bgvid").replaceWith($('<video autoplay loop poster="img/fotos/backgrounds/bck-001.jpg" id="bgvid"><source src="videos/bck/jm-back-video.webm" type="video/webm"></video>'));
-    }
-}
