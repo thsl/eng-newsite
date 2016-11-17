@@ -1,0 +1,138 @@
+body {
+  font-family: @font-family-montserrat;
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  color: @text-color;
+  font-weight: 200;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  @media (max-width: @screen-md) {
+    font-size: 15px;
+  }
+}
+
+// Links
+a {
+  color: @link-color-blue;
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    color: @link-hover-color-blue;
+    text-decoration: underline;
+  }
+  &:focus {
+    .tab-focus();
+  }
+  &.nounderline {
+    text-decoration: none !important;
+  }
+}
+
+// tamanhos de fonte do Hs
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6 .h6 {
+  font-family: @font-family-montserrat;
+  letter-spacing: -0.03em;
+  margin: 0;
+  font-weight: 700;
+}
+
+h1, .h1 {
+  font-size: 55px;
+  @media (max-width: @screen-sm-min) {
+    font-size: 53px;
+  }
+}
+
+h2, .h2 {
+  font-size: 50px;
+  @media (max-width: @screen-md) {
+    font-size: 40px;
+  }
+}
+
+h3, .h3 {
+  font-size: 45px;
+  @media (max-width: @screen-md) {
+    font-size: 33px;
+  }
+}
+
+h4, .h4 {
+  font-size: 40px;
+  @media (max-width: @screen-md) {
+    font-size: 25px;
+  }
+}
+
+h5, .h5 {
+  font-size: 25px;
+  @media (max-width: @screen-md) {
+    font-size: 20px;
+  }
+}
+
+h6, .h6 {
+  font-size: 20px;
+  @media (max-width: @screen-md) {
+    font-size: 15px;
+  }
+}
+
+
+// Icones
+
+@font-face {
+  font-family: "Ionicons";
+  src: url('@{font-path}/@{ionicons-font-path}/ionicons.eot?v=2.0.0');
+  src: url('@{font-path}/@{ionicons-font-path}/ionicons.eot?v=2.0.0#iefix') format('embedded-opentype'),
+  url('@{font-path}/@{ionicons-font-path}/ionicons.ttf?v=2.0.0') format('truetype'),
+  url('@{font-path}/@{ionicons-font-path}/ionicons.woff?v=2.0.0') format('woff'),
+  url('@{font-path}/@{ionicons-font-path}/ionicons.svg?v=2.0.0#Ionicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('@{font-path}/@{glyphicons-font-path}/glyphicons-halflings-regular.eot');
+  src: url('@{font-path}/@{glyphicons-font-path}/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'),
+  url('@{font-path}/@{glyphicons-font-path}/glyphicons-halflings-regular.woff2') format('woff2'),
+  url('@{font-path}/@{glyphicons-font-path}/glyphicons-halflings-regular.woff') format('woff'),
+  url('@{font-path}/@{glyphicons-font-path}/glyphicons-halflings-regular.ttf') format('truetype'),
+  url('@{font-path}/@{glyphicons-font-path}/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg')
+}
+
+// Montserrat
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('@{font-path}/@{montserrat-font-path}/montserrat-bold-webfont.eot');
+  src: url('@{font-path}/@{montserrat-font-path}/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
+  url('@{font-path}/@{montserrat-font-path}/montserrat-bold-webfont.woff2') format('woff2'),
+  url('@{font-path}/@{montserrat-font-path}/montserrat-bold-webfont.woff') format('woff'),
+  url('@{font-path}/@{montserrat-font-path}/montserrat-bold-webfont.ttf') format('truetype'),
+  url('@{font-path}/@{montserrat-font-path}/montserrat-bold-webfont.svg#montserratbold') format('svg');
+  font-weight: 700;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('@{font-path}/@{montserrat-font-path}/montserrat-light-webfont.eot');
+  src: url('@{font-path}/@{montserrat-font-path}/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'),
+  url('@{font-path}/@{montserrat-font-path}/montserrat-light-webfont.woff2') format('woff2'),
+  url('@{font-path}/@{montserrat-font-path}/montserrat-light-webfont.woff') format('woff'),
+  url('@{font-path}/@{montserrat-font-path}/montserrat-light-webfont.ttf') format('truetype'),
+  url('@{font-path}/@{montserrat-font-path}/montserrat-light-webfont.svg#montserratlight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
