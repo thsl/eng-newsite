@@ -1,11 +1,12 @@
 .contain-header {
   position: relative;
   overflow: hidden;
-  background-color: rgba(0, 0, 0, 0);
+
   .main-header {
     min-height: 100vh;
     display: block;
     color: #fff;
+    background-color: rgba(0, 0, 0, 0.6);
     video#bgvid {
       position: absolute;
       top: 50%;
@@ -14,7 +15,7 @@
       min-height: 100%;
       width: auto;
       height: auto;
-      z-index: -100;
+      z-index: 0;
       -ms-transform: translateX(-50%) translateY(-50%);
       -moz-transform: translateX(-50%) translateY(-50%);
       -webkit-transform: translateX(-50%) translateY(-50%);
@@ -38,8 +39,8 @@
     h1#header-you {
       text-transform: uppercase;
       text-align: center;
-      font-family: arial;
     }
+
     p {
       font-size: 2rem;
     }
@@ -88,6 +89,18 @@
       font-size: 12px;
     }
   }
+  .content-header {
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    background-repeat: no-repeat;
+  }
 }
 
 .main-slopy {
@@ -97,6 +110,7 @@
   padding: 150px 0;
   margin-top: -180px;
   position: relative;
+  background-color: transparent;
   .section-slopy {
     position: relative;
     margin: -100px -50px 0 -50px;
@@ -106,15 +120,16 @@
     -ms-transform-origin: left center;
     transform-origin: left center;
     background: #000;
-    border-right-color: #e90089;
-    border-left-color: #e90089;
     -webkit-transform: rotate(4deg);
     -moz-transform: rotate(4deg);
     -o-transform: rotate(4deg);
     -ms-transform: rotate(4deg);
     transform: rotate(4deg);
-    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4) inset;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
     overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+
     .section-slopy-content {
 
       -webkit-transform: rotate(-4deg);

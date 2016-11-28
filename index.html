@@ -16,7 +16,7 @@
         <link href="css/ionicons.min.css" rel="stylesheet">
         <link href="css/theme.css" rel="stylesheet">
     </head>
-    <body data-spy="scroll" data-target=".navbar-fixed-top" onload="playOnLoad();">
+    <body id="home" data-spy="scroll" data-target=".navbar-fixed-top">
 
         <nav class="navbar navbar-fixed-top navbar-theme" role="navigation">
             <div class="container">
@@ -52,13 +52,15 @@
         </nav>
 
         <header class="content contain-header">
-            <div class="container">
-                <div class="row main-header">
+            <div>
+                <div class="main-header">
+                    <div class="content-header" style="background-image: url('img/fotos/backgrounds/bck-001.jpg');"></div>
                     <video autoplay loop poster="img/fotos/backgrounds/bck-001.jpg" id="bgvid">
                         <source src="videos/bck/jm-back-video.ogg" type="video/ogg"/>
                         <source src="videos/bck/jm-back-video.webm" type="video/webm"/>
                         <source src="videos/bck/jm-back-video.mp4" type="video/mp4"/>
                     </video>
+
                     <div class="header-txt-center">
                         <h1>Construindo legados</h1>
                         <p>Qualidade e a certeza de lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris tempus varius lorem, in egestas libero faucibus in</p>
@@ -67,7 +69,9 @@
                         <p>Acesso á Ponte JK - Brasília, DF<br/>
                             Obra finalizada em Jan/2014</p>
                     </div>
+
                 </div>
+
             </div>
         </header>
         <section class="main-slopy noticias">
@@ -87,8 +91,8 @@
         </section>
 
         <script src="js/jquery.js"></script>
-        <script src="js/bootstrap.min.js"></script>
         <script src="js/jquery.easing.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
         <script src="js/wow.min.js"></script>
         <script src="js/theme.js"></script>
     </body>
