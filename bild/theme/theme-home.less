@@ -114,6 +114,7 @@
   margin-top: -130px;
   position: relative;
   background-color: transparent;
+
   @media (min-width: 1200px) {
     margin-top: -180px;
   }
@@ -135,7 +136,6 @@
     overflow: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
-
     .section-slopy-content {
       -webkit-transform: rotate(-4deg);
       -moz-transform: rotate(-4deg);
@@ -181,7 +181,7 @@
     }
     a {
       color: #fff;
-      &:hover{
+      &:hover {
         text-decoration: none;
         color: #FFA364;
       }
@@ -209,19 +209,60 @@
 
 }
 
-.triagle-rigth-top {
-  position: absolute;
-  top: -3%;
-  right: 0;
-  display: inline-block;
-  width: 0;
-  height: 0;
-  padding-top: 6%;
-  border-style: solid;
-  border-width: 0 0 100px 370px;
-  border-color: transparent transparent #DD5900 transparent;
-  line-height: 0;
-  _border-color: #000000 #000000 #DD5900 #000000;
-  _filter: progid:DXImageTransform.Microsoft.Chroma(color='#000000');
-}
+#servicos {
+  position: relative;
+  padding: 30px 0;
+  &:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    box-shadow: 0px 9px 20px -13px #242424;
+    -webkit-box-shadow: 0px 9px 20px -13px #242424;
+    -moz-box-shadow: 0px 9px 20px -13px #242424;
+    -o-box-shadow: 0px 9px 20px -13px #242424;
+    //top: 0;
+    bottom: 0;
+    left: calc(55% - 25px);
+    width: 40%;
+    height: 30px;
+  }
 
+
+  #carousel-servicos {
+    .servico-item {
+      padding: 30px;
+      text-align: center;
+      position: relative;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: calc(55% - 25px);
+        height: 0.5em;
+        width: 40%;
+        border-top: 3px solid @laranja-theme;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: calc(55% - 25px);
+        height: 0.5em;
+        width: 40%;
+        border-top: 3px solid @laranja-theme;
+        @media (max-width: @screen-md) {
+          display: none;
+        }
+      }
+
+      a {
+        color: #fff;
+        &:hover {
+          text-decoration: none;
+          color: #FFA364;
+        }
+      }
+    }
+  }
+
+}
