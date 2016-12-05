@@ -267,8 +267,8 @@
 }
 
 #jm-quemsomos {
-  margin: 50px 0;
-  padding: 50px 0;
+  //margin: 50px 0;
+  padding: 100px 0;
   .fill-image {
     background-repeat: no-repeat;
     background-color: #fff;
@@ -278,13 +278,15 @@
     background-size: cover;
     //-o-background-size: cover;
     padding-top: 56.25%;
+    margin-top: -125px;
     @media (max-width: @screen-sm) {
       background-size: 200%;
       padding-top: 120%;
       background-position-x: 80%;
+      margin-top: 0;
     }
   }
-  .circular-info{
+  .circular-info {
     width: 50px;
     height: 50px;
     -moz-border-radius: 50%;
@@ -297,5 +299,45 @@
     font-weight: 700;
     padding-top: 5px;
     float: right;
+  }
+}
+
+#clientes {
+  //margin: 50px 0;
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+  .clientes-item {
+    margin: 50px 0;
+  }
+}
+
+#jm-emnumeros {
+  //margin: 50px 0;
+  padding: 120px 0;
+  background-repeat: no-repeat;
+  background-color: #111620;
+  background-position: center center;
+  //-webkit-background-size: cover;
+  //-moz-background-size: cover;
+  background-size: cover;
+  //-o-background-size: cover;
+  color: #fff;
+  overflow:hidden;
+  position:relative;
+  &:before {
+    position: absolute;
+    content: '';
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    -webkit-transform-origin: 3% 0;
+    transform-origin: 3% 0;
+    top: -185px;
+    left: -25%;
+    z-index: 0;
+    width: 150%;
+    height: 70px;
+    background: #fff;
+    box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
   }
 }

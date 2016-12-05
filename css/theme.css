@@ -1451,8 +1451,7 @@ html {
   color: #FFA364;
 }
 #jm-quemsomos {
-  margin: 50px 0;
-  padding: 50px 0;
+  padding: 100px 0;
 }
 #jm-quemsomos .fill-image {
   background-repeat: no-repeat;
@@ -1460,12 +1459,14 @@ html {
   background-position: center center;
   background-size: cover;
   padding-top: 56.25%;
+  margin-top: -125px;
 }
 @media (max-width: 768px) {
   #jm-quemsomos .fill-image {
     background-size: 200%;
     padding-top: 120%;
     background-position-x: 80%;
+    margin-top: 0;
   }
 }
 #jm-quemsomos .circular-info {
@@ -1481,6 +1482,39 @@ html {
   font-weight: 700;
   padding-top: 5px;
   float: right;
+}
+#clientes {
+  padding: 80px 0;
+  position: relative;
+  overflow: hidden;
+}
+#clientes .clientes-item {
+  margin: 50px 0;
+}
+#jm-emnumeros {
+  padding: 120px 0;
+  background-repeat: no-repeat;
+  background-color: #111620;
+  background-position: center center;
+  background-size: cover;
+  color: #fff;
+  overflow: hidden;
+  position: relative;
+}
+#jm-emnumeros:before {
+  position: absolute;
+  content: '';
+  -webkit-transform: rotate(-3deg);
+  transform: rotate(-3deg);
+  -webkit-transform-origin: 3% 0;
+  transform-origin: 3% 0;
+  top: -185px;
+  left: -25%;
+  z-index: 0;
+  width: 150%;
+  height: 70px;
+  background: #fff;
+  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
 }
 .navbar-theme {
   -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
