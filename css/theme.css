@@ -1151,6 +1151,11 @@ html {
   line-height: 0;
   border-width: 0 0 100px 370px;
 }
+@media (max-width: 768px) {
+  .triangle {
+    border-width: 0 0 100px 199px;
+  }
+}
 .triagle-rigth-top {
   border-color: transparent transparent #DD5900 transparent;
 }
@@ -1444,6 +1449,38 @@ html {
 #servicos #carousel-servicos .servico-item a:hover {
   text-decoration: none;
   color: #FFA364;
+}
+#jm-quemsomos {
+  margin: 50px 0;
+  padding: 50px 0;
+}
+#jm-quemsomos .fill-image {
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-position: center center;
+  background-size: cover;
+  padding-top: 56.25%;
+}
+@media (max-width: 768px) {
+  #jm-quemsomos .fill-image {
+    background-size: 200%;
+    padding-top: 120%;
+    background-position-x: 80%;
+  }
+}
+#jm-quemsomos .circular-info {
+  width: 50px;
+  height: 50px;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #DD5900;
+  text-align: center;
+  color: #fff;
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 5px;
+  float: right;
 }
 .navbar-theme {
   -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;

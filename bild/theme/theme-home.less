@@ -227,7 +227,6 @@
     height: 30px;
   }
 
-
   #carousel-servicos {
     .servico-item {
       padding: 30px;
@@ -265,4 +264,38 @@
     }
   }
 
+}
+
+#jm-quemsomos {
+  margin: 50px 0;
+  padding: 50px 0;
+  .fill-image {
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: center center;
+    //-webkit-background-size: cover;
+    //-moz-background-size: cover;
+    background-size: cover;
+    //-o-background-size: cover;
+    padding-top: 56.25%;
+    @media (max-width: @screen-sm) {
+      background-size: 200%;
+      padding-top: 120%;
+      background-position-x: 80%;
+    }
+  }
+  .circular-info{
+    width: 50px;
+    height: 50px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    background: @laranja-theme;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 700;
+    padding-top: 5px;
+    float: right;
+  }
 }
