@@ -1338,7 +1338,7 @@ html {
   background-color: transparent;
   background-repeat: no-repeat;
 }
-.main-slopy .noticia-backgound {
+.main-slopy .element-backgound {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -1355,7 +1355,7 @@ html {
   background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, #000000 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#000000', GradientType=0);
 }
-.noticias .noticia-text {
+#noticias .noticia-text {
   position: absolute;
   bottom: 10%;
   color: #fff;
@@ -1363,38 +1363,38 @@ html {
   padding: 0 10%;
 }
 @media (max-width: 768px) {
-  .noticias .noticia-text {
+  #noticias .noticia-text {
     padding: 0 20%;
   }
 }
-.noticias .noticia-text a {
+#noticias .noticia-text a {
   color: #fff;
 }
-.noticias .noticia-text a:hover {
+#noticias .noticia-text a:hover {
   text-decoration: none;
   color: #FFA364;
 }
-.noticias .slopy-bck {
+#noticias .slopy-bck {
   padding-bottom: 50%;
   margin: -80px 0;
 }
 @media (max-width: 992px) {
-  .noticias .slopy-bck {
+  #noticias .slopy-bck {
     padding-bottom: 70%;
   }
 }
 @media (max-width: 768px) {
-  .noticias .slopy-bck {
+  #noticias .slopy-bck {
     padding-bottom: 100%;
   }
 }
 @media (max-width: 480px) {
-  .noticias .slopy-bck {
+  #noticias .slopy-bck {
     padding-bottom: 120%;
   }
 }
 @media (max-width: 280px) {
-  .noticias .slopy-bck {
+  #noticias .slopy-bck {
     padding-bottom: 150%;
   }
 }
@@ -1444,7 +1444,7 @@ html {
   }
 }
 #servicos #carousel-servicos .servico-item a {
-  color: #fff;
+  color: #535353;
 }
 #servicos #carousel-servicos .servico-item a:hover {
   text-decoration: none;
@@ -1491,30 +1491,35 @@ html {
 #clientes .clientes-item {
   margin: 50px 0;
 }
-#jm-emnumeros {
-  padding: 120px 0;
-  background-repeat: no-repeat;
-  background-color: #111620;
-  background-position: center center;
-  background-size: cover;
+#jm-numeros a {
   color: #fff;
-  overflow: hidden;
-  position: relative;
 }
-#jm-emnumeros:before {
+#jm-numeros a:hover {
+  text-decoration: none;
+  color: #FFA364;
+}
+#jm-numeros .section-slopy-content {
+  color: #fff;
+  z-index: 1;
+  padding: 5% 0;
+}
+@media (max-width: 992px) {
+  #jm-numeros .section-slopy-content {
+    padding: 5% 10%;
+  }
+}
+#jm-numeros .slopy-bck {
   position: absolute;
-  content: '';
-  -webkit-transform: rotate(-3deg);
-  transform: rotate(-3deg);
-  -webkit-transform-origin: 3% 0;
-  transform-origin: 3% 0;
-  top: -185px;
-  left: -25%;
-  z-index: 0;
-  width: 150%;
-  height: 70px;
-  background: #fff;
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+#jm-numeros .square-numeros {
+  border: 10px solid rgba(255, 255, 255, 0.1);
+  margin: 10px auto;
+  padding: 20px;
+  max-width: 250px;
 }
 .navbar-theme {
   -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
