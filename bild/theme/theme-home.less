@@ -136,6 +136,9 @@
     overflow: hidden;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    @media (max-width: @screen-md) {
+      border-radius: 50px;
+    }
     .section-slopy-content {
       -webkit-transform: rotate(-4deg);
       -moz-transform: rotate(-4deg);
@@ -325,7 +328,7 @@
     z-index: 1;
     padding: 5% 0;
     @media (max-width: @screen-md) {
-      padding: 5% 10%;
+      padding: 18% 10%;
     }
   }
   .slopy-bck {
@@ -335,7 +338,7 @@
     height: 100%;
     z-index: -1;
   }
-  .square-numeros{
+  .square-numeros {
     border: 10px solid rgba(255, 255, 255, 0.1);
     margin: 10px auto;
     padding: 20px;
@@ -344,3 +347,29 @@
   }
 
 }
+
+.timeline {
+  position: relative;
+  ul li {
+    list-style-type: none;
+  }
+  li {
+    border-left: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 20px 40px 20px 20px;
+    position: relative;
+    margin: 40px 0;
+    & :before {
+      top: 30%;
+      left: -5px;
+      position: absolute;
+      content: " ";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: @laranja-theme;
+    }
+  }
+}
+
+
+

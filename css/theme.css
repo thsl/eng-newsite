@@ -1325,6 +1325,11 @@ html {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
+@media (max-width: 992px) {
+  .main-slopy .section-slopy {
+    border-radius: 50px;
+  }
+}
 .main-slopy .section-slopy .section-slopy-content {
   -webkit-transform: rotate(-4deg);
   -moz-transform: rotate(-4deg);
@@ -1505,7 +1510,7 @@ html {
 }
 @media (max-width: 992px) {
   #jm-numeros .section-slopy-content {
-    padding: 5% 10%;
+    padding: 18% 10%;
   }
 }
 #jm-numeros .slopy-bck {
@@ -1520,6 +1525,28 @@ html {
   margin: 10px auto;
   padding: 20px;
   max-width: 250px;
+}
+.timeline {
+  position: relative;
+}
+.timeline ul li {
+  list-style-type: none;
+}
+.timeline li {
+  border-left: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 20px 40px 20px 20px;
+  position: relative;
+  margin: 40px 0;
+}
+.timeline li :before {
+  top: 30%;
+  left: -5px;
+  position: absolute;
+  content: " ";
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #DD5900;
 }
 .navbar-theme {
   -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
