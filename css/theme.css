@@ -1315,27 +1315,22 @@ html {
   -ms-transform-origin: left center;
   transform-origin: left center;
   background: #000;
-  -webkit-transform: rotate(4deg);
-  -moz-transform: rotate(4deg);
-  -o-transform: rotate(4deg);
-  -ms-transform: rotate(4deg);
-  transform: rotate(4deg);
+  -webkit-transform: skewY(4deg);
+  -moz-transform: skewY(4deg);
+  -o-transform: skewY(4deg);
+  -ms-transform: skewY(4deg);
+  transform: skewY(4deg);
   box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
-@media (max-width: 992px) {
-  .main-slopy .section-slopy {
-    border-radius: 50px;
-  }
-}
 .main-slopy .section-slopy .section-slopy-content {
-  -webkit-transform: rotate(-4deg);
-  -moz-transform: rotate(-4deg);
-  -o-transform: rotate(-4deg);
-  -ms-transform: rotate(-4deg);
-  transform: rotate(-4deg);
+  -webkit-transform: skewY(-4deg);
+  -moz-transform: skewY(-4deg);
+  -o-transform: skewY(-4deg);
+  -ms-transform: skewY(-4deg);
+  transform: skewY(-4deg);
 }
 .main-slopy .slopy-bck {
   background-size: cover;
@@ -1370,6 +1365,7 @@ html {
 @media (max-width: 768px) {
   #noticias .noticia-text {
     padding: 0 20%;
+    text-align: center;
   }
 }
 #noticias .noticia-text a {
@@ -1472,6 +1468,7 @@ html {
     padding-top: 120%;
     background-position-x: 80%;
     margin-top: 0;
+    text-align: center;
   }
 }
 #jm-quemsomos .circular-info {
@@ -1487,6 +1484,11 @@ html {
   font-weight: 700;
   padding-top: 5px;
   float: right;
+}
+@media (max-width: 768px) {
+  #jm-quemsomos {
+    text-align: center;
+  }
 }
 #clientes {
   padding: 80px 0;
@@ -1547,6 +1549,117 @@ html {
   height: 10px;
   border-radius: 50%;
   background-color: #DD5900;
+}
+.portfolio-master .portfolio-list {
+  margin: 30px 0;
+}
+.portfolio-master .portfolio-list .port-item {
+  padding: 0;
+}
+.portfolio-master .portfolio-list .port-item .port-item-content {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  height: 290px;
+  background-color: #000;
+  overflow: hidden;
+}
+.portfolio-master .portfolio-list .port-item .port-cover {
+  height: 100%;
+  min-height: 100%;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,000000+100&0+0,0.7+100 */
+  /* IE9 SVG, needs conditional override of 'filter' to 'none' */
+  background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMDAwMDAiIHN0b3Atb3BhY2l0eT0iMC43Ii8+CiAgPC9saW5lYXJHcmFkaWVudD4KICA8cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2dyYWQtdWNnZy1nZW5lcmF0ZWQpIiAvPgo8L3N2Zz4=);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+  /* FF3.6-15 */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(0, 0, 0, 0.9)));
+  /* Chrome4-9,Safari4-5 */
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+  /* Chrome10-25,Safari5.1-6 */
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+  /* Opera 11.10-11.50 */
+  background: -ms-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+  /* IE10 preview */
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00ffffff', endColorstr='#b3000000', GradientType=0);
+  /* IE6-8 */
+  position: relative;
+}
+.portfolio-master .portfolio-list .port-item .port-cover:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  display: inline-block;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 30px 0 0 200px;
+  border-color: transparent transparent transparent #DD5900;
+}
+.portfolio-master .portfolio-list .port-item .port-text {
+  color: #ffffff;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.portfolio-master .portfolio-list .port-item .port-text a {
+  color: #fff;
+}
+.portfolio-master .portfolio-list .port-item .port-text a:hover {
+  text-decoration: none;
+  color: #FFA364;
+}
+footer {
+  margin: 160px 0 0 0;
+}
+footer .contato {
+  color: #ffffff;
+}
+footer .contato .section-slopy-content {
+  margin: 60px;
+}
+footer .contato #form-contato button {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border: 2px solid rgba(255, 255, 255, 0.7);
+  background-color: #DD5900;
+  text-transform: uppercase;
+  font-size: 1em;
+  color: #ffffff;
+  padding: 7px 20px 5px 20px;
+}
+footer .contato #form-contato input,
+footer .contato #form-contato textarea {
+  border-radius: 0;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border: 2px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.7);
+  padding: 25px 10px 25px 20px;
+}
+footer .contato #form-contato ::-webkit-input-placeholder {
+  color: #ffffff;
+}
+footer .contato #form-contato :-moz-placeholder {
+  /* Firefox 18- */
+  color: #ffffff;
+}
+footer .contato #form-contato ::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #ffffff;
+}
+footer .contato #form-contato :-ms-input-placeholder {
+  color: #ffffff;
 }
 .navbar-theme {
   -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
@@ -1642,11 +1755,11 @@ html {
   background-color: transparent;
 }
 .top-nav-collapse .open .dropdown-menu {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
   margin-top: 10px;
 }
 .top-nav-collapse .open .dropdown-menu a:hover {
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .navbar-nav-theme {
   margin-top: 10px;
@@ -1689,16 +1802,16 @@ html {
 @media (max-width: 768px) {
   .navbar-theme {
     padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
   }
 }
 .top-nav-collapse {
   padding: 10px 20px !important;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 @media (max-width: 768px) {
   .top-nav-collapse {
     padding: 10px 20px;
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0, 0.9);
   }
 }
