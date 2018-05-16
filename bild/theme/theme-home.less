@@ -72,13 +72,20 @@
       }
     }
   }
+
   .header-txt-center {
     text-align: center;
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 85%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: table;
+    .header-txt-center-content {
+      display: table-cell;
+      vertical-align: middle;
+    }
   }
   .header-txt-bottom {
     position: absolute;
@@ -158,9 +165,9 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 60%;
+    height: 100%;
     min-width: 100%;
-    min-height: 60%;
+    min-height: 100%;
     background: rgba(255, 255, 255, 0);
     background: -moz-linear-gradient(top, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 1) 100%);
     background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, rgba(0, 0, 0, 1)));
@@ -216,20 +223,6 @@
 #servicos {
   position: relative;
   padding: 30px 0;
-  &:after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    box-shadow: 0px 9px 20px -13px #242424;
-    -webkit-box-shadow: 0px 9px 20px -13px #242424;
-    -moz-box-shadow: 0px 9px 20px -13px #242424;
-    -o-box-shadow: 0px 9px 20px -13px #242424;
-    //top: 0;
-    bottom: 0;
-    left: calc(55% - 25px);
-    width: 40%;
-    height: 30px;
-  }
 
   #carousel-servicos {
     .servico-item {
@@ -270,9 +263,10 @@
 
 }
 
-#jm-quemsomos {
+#quemsomos {
   //margin: 50px 0;
   padding: 100px 0;
+  position: relative;
   .fill-image {
     background-repeat: no-repeat;
     background-color: #fff;
@@ -439,11 +433,12 @@ footer {
         -moz-border-radius: 0;
         -webkit-border-radius: 0;
         border: 2px solid rgba(255, 255, 255, 0.7);
-        background-color: @laranja-theme;
+        background-color: transparent;
         text-transform: uppercase;
-        font-size: 1em;
+        font-size: 0.8em;
         color: @white;
         padding: 7px 20px 5px 20px;
+        border-radius: 100px;
       }
       input, textarea {
         border-radius: 0;

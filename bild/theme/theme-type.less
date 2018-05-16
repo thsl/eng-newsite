@@ -7,9 +7,8 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-size: 15px;
   @media (max-width: @screen-md) {
-    font-size: 13px;
+    font-size: 11px;
   }
 }
 
@@ -29,7 +28,9 @@ a {
     text-decoration: none !important;
   }
 }
-
+p{
+  font-size: 1em;
+}
 // tamanhos de fonte do Hs
 h1, .h1,
 h2, .h2,
@@ -37,54 +38,54 @@ h3, .h3,
 h4, .h4,
 h5, .h5,
 h6 .h6 {
-  font-family: @font-family-montserrat;
+  font-family: @font-family-bebas;
   letter-spacing: -0.03em;
   margin: 0;
   font-weight: 700;
+  //font-size: 200%;
 }
 
 h1, .h1 {
-  font-size: 45px;
+  font-size: 3.998em;
   @media (max-width: @screen-sm-min) {
-    font-size: 38px;
+    //font-size: 38px;
   }
 }
 
 h2, .h2 {
-  font-size: 40px;
+  font-size: 2.827em;
   @media (max-width: @screen-md) {
-    font-size: 30px;
+    //font-size: 30px;
   }
 }
 
 h3, .h3 {
-  font-size: 30px;
+  font-size: 1.999em;
   @media (max-width: @screen-md) {
-    font-size: 25px;
+    //font-size: 25px;
   }
 }
 
 h4, .h4 {
-  font-size: 25px;
+  font-size: 1.414em;
   @media (max-width: @screen-md) {
-    font-size: 18px;
+    //font-size: 18px;
   }
 }
 
 h5, .h5 {
-  font-size: 18px;
+  font-size: 1.3em;
   @media (max-width: @screen-md) {
-    font-size: 15px;
+    //font-size: 15px;
   }
 }
 
 h6, .h6 {
-  font-size: 15px;
+  font-size: 1.2em;
   @media (max-width: @screen-md) {
-    font-size: 13px;
+    //font-size: 13px;
   }
 }
-
 
 // Icones
 
@@ -109,31 +110,41 @@ h6, .h6 {
   url('@{font-path}/@{glyphicons-font-path}/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg')
 }
 
-// Montserrat
+// fonts
 
 @font-face {
   font-family: 'montserrat';
-  src: url('@{font-path}/@{montserrat-font-path}/montserrat-bold-webfont.eot');
-  src: url('@{font-path}/@{montserrat-font-path}/montserrat-bold-webfont.eot?#iefix') format('embedded-opentype'),
-  url('@{font-path}/@{montserrat-font-path}/montserrat-bold-webfont.woff2') format('woff2'),
-  url('@{font-path}/@{montserrat-font-path}/montserrat-bold-webfont.woff') format('woff'),
-  url('@{font-path}/@{montserrat-font-path}/montserrat-bold-webfont.ttf') format('truetype'),
-  url('@{font-path}/@{montserrat-font-path}/montserrat-bold-webfont.svg#montserratbold') format('svg');
+  src: url('@{font-path}/@{montserrat-font-path}/montserrat-bold-webfont.woff2') format('woff2'),
+  url('@{font-path}/@{montserrat-font-path}/montserrat-bold-webfont.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'montserrat';
+  src: url('@{font-path}/@{montserrat-font-path}/montserrat-light-webfont.woff2') format('woff2'),
+  url('@{font-path}/@{montserrat-font-path}/montserrat-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'bebas';
+  src: url('@{font-path}/@{bebas-font-path}/bebasneue_regular-webfont.woff2') format('woff2'),
+  url('@{font-path}/@{bebas-font-path}/bebasneue_regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'bebas';
+  src: url('@{font-path}/@{bebas-font-path}/bebasneue_bold-webfont.woff2') format('woff2'),
+  url('@{font-path}/@{bebas-font-path}/bebasneue_bold-webfont.woff') format('woff');
   font-weight: 700;
   font-style: normal;
 
 }
 
-@font-face {
-  font-family: 'montserrat';
-  src: url('@{font-path}/@{montserrat-font-path}/montserrat-light-webfont.eot');
-  src: url('@{font-path}/@{montserrat-font-path}/montserrat-light-webfont.eot?#iefix') format('embedded-opentype'),
-  url('@{font-path}/@{montserrat-font-path}/montserrat-light-webfont.woff2') format('woff2'),
-  url('@{font-path}/@{montserrat-font-path}/montserrat-light-webfont.woff') format('woff'),
-  url('@{font-path}/@{montserrat-font-path}/montserrat-light-webfont.ttf') format('truetype'),
-  url('@{font-path}/@{montserrat-font-path}/montserrat-light-webfont.svg#montserratlight') format('svg');
-  font-weight: normal;
-  font-style: normal;
-
-}
 
