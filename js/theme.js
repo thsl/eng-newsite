@@ -58,3 +58,5 @@ $(document).ready(function () {
         interval: false
     });
 });
+
+document.getElementById('bgvid').play();
