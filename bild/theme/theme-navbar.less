@@ -21,10 +21,11 @@
         background: url("@{image-path-theme}/logos/logo-eng-md-w.png") no-repeat left top;
         text-indent: -90000px;
         display: block;
+        background-size: 100%;
         @media (max-width: @screen-sm) {
           width: 80px;
           height: 36px;
-          //background-size: 100%;
+          background-size: 240px;
         }
       }
     }
@@ -148,11 +149,35 @@
 }
 
 .top-nav-collapse {
-  padding: 10px 20px !important;
+  padding: 10px 20px 30px 20px !important;
   background-color: rgba(0, 0, 0, 0.9);
+  //min-height: 120px;
+  clip-path: polygon(0 0, 100% 0, 100% 90%, 0 calc(75% - 5vw));
+  &:after{
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    line-height: 0;
+    border-color: transparent transparent @laranja-theme transparent;
+    border-width: 0 0 36px 108px;
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    -webkit-transition: .8s ease-in-out, padding .8s ease-in-out;
+    -moz-transition: .8s ease-in-out, padding .8s ease-in-out;
+    transition: .8s ease-in-out, padding .8s ease-in-out;
+    @media (max-width: @screen-sm) {
+      display: none;
+    }
+  }
   @media (max-width: @screen-sm) {
     padding: 10px 20px;
     background-color: rgba(0, 0, 0, 0.9);
+    clip-path: none;
   }
 }
+
+
 
