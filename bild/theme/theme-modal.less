@@ -1,0 +1,16 @@
+.modal-content {
+  border-radius: 0;
+  clip-path: polygon(0% calc(12% - 5vw), 100% 0, 100% 100%, 0% 100%);
+  border: 0;
+  .modal-header {
+    position: relative;
+    border: 0;
+  }
+}
+.modal-open {
+  overflow: hidden;
+  .header-internal,.navbar, .portfolio-master, footer  {
+    filter: blur(3px) grayscale(100%);
+    transition: 0.5s;
+  }
+}
