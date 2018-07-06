@@ -59,4 +59,21 @@ $(document).ready(function () {
     });
 });
 
-document.getElementById('bgvid').play();
+
+$(document).ready(function(){
+    $(".menu-button a").click(function(){
+        $(".overlay").fadeToggle(200);
+        $('#home').toggleClass('menu-open');
+        $(this).toggleClass('btn-open').toggleClass('btn-close');
+
+    });
+});
+/*
+$('.nav-mainmenu li a').on('click', function(){
+    $(".overlay").fadeToggle(200);
+    $(".menu-button a").toggleClass('btn-open').toggleClass('btn-close');
+    open = false;
+});
+*/
+
+//document.getElementById('bgvid').play();
